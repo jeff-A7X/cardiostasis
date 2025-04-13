@@ -47,6 +47,10 @@ header {
     text-decoration: none;
 }
 
+.nav_section a:hover img{
+    opacity: 0.5;
+}
+
 .logo_section img {
     width: 10vw;
 }
