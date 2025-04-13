@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+      
+}
+
+header{
+    background-color: black;
+}
+
+.center_container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_section {
+    padding: 2vh 0;
+}
+
+.nav_links_section{
+    display: flex;
+    gap: 3vw;
+    font-size: 0.8rem;
+}
+
+.nav_links_section a:hover{
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.logo_section img{
+    width: 10vw;
+}
+
+.socials_section img{
+    width: 2vw;
+}
