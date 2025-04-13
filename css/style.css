@@ -7,6 +7,10 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
 h1{
     font-size: 3rem;
 }
@@ -86,7 +90,7 @@ body {
 }
 
 .album_section {
-    padding: 20vh 0;
+    padding: 15vh 0;
     display: flex;
     justify-content: flex-start;
     gap: 2vw;
