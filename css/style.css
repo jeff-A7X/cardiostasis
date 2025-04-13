@@ -4,11 +4,18 @@
     font-weight: 400;
     font-style: normal;
     color: white;
-      
+
 }
 
-header{
+h1{
+    font-size: 3rem;
+}
+
+header {
     background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 .center_container {
@@ -19,25 +26,87 @@ header{
     justify-content: space-between;
 }
 
-.nav_section {
-    padding: 2vh 0;
+.center_container2 {
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
-.nav_links_section{
+.nav_section {
+    padding: 1vh 0;
+
+}
+
+.nav_links_section {
     display: flex;
     gap: 3vw;
     font-size: 0.8rem;
 }
 
-.nav_links_section a:hover{
+.nav_links_section a:hover {
     color: #FF0000;
     text-decoration: none;
 }
 
-.logo_section img{
+.logo_section img {
     width: 10vw;
 }
 
-.socials_section img{
+.socials_section img {
     width: 2vw;
+}
+
+.main_foto {
+    background-image: url(../img/bandfoto1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    filter: contrast(190%) brightness(100%) grayscale(70%) blur(0.2px);
+    position: relative;
+    overflow: hidden;
+}
+
+.main_foto h1 {
+    color: white;
+    font-weight: 700;
+    line-height: 40px;
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    z-index: 2;
+    font-size: clamp(2rem, 6vw, 7rem);
+}
+
+body {
+    background-color: black;
+}
+
+.album_section {
+    padding: 20vh 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+.album_section img {
+    width: 35vw;
+}
+
+.album_section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.legal_links {
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
 }
