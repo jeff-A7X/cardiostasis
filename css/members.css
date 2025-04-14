@@ -115,7 +115,8 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 20vh 0;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
 }
 
 .individual_section{
@@ -164,4 +165,19 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 3vh;
+}
+
+.favourites_section {
+    text-align: center;
+    padding-bottom: 25vh;
+}
+
+.favourites_text{
+    padding: 4vh 0;
+}
+
+.embed_section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 0;
 }
