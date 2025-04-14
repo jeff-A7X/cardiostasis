@@ -59,6 +59,10 @@ header {
     opacity: 0.5;
 }
 
+.socials_section a:hover img {
+    opacity: 0.5;
+}
+
 .logo_section img {
     width: 10vw;
 }
@@ -83,8 +87,8 @@ header {
     font-weight: 700;
     line-height: 40px;
     position: absolute;
-    bottom: 80px;
-    left: 60px;
+    bottom: 120px;
+    left: 80px;
     z-index: 2;
     font-size: clamp(2rem, 6vw, 7rem);
 }
@@ -132,7 +136,7 @@ footer{
 
 .merch_section {
     padding: 15vh 0;
-    gap: 15vh;
+    gap: 10vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -156,3 +160,4 @@ footer{
     transform: scale(1.05);
     filter: opacity(0.8)
 }
+

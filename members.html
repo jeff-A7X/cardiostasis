@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,15 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/members.css">
+    <script src="javascript/members.js" defer></script>
     <title>Members</title>
 </head>
+
 <body>
     <header>
         <nav class="center_container nav_section">
             <div class="logo_section">
-                <a href="#"><img src="img/logo3transwit.png" alt="cardiostasis logo"></a>
+                <a href="index.html"><img src="img/logo3transwit.png" alt="cardiostasis logo"></a>
             </div>
 
             <div class="nav_links_section">
@@ -47,36 +50,51 @@
     <main>
         <h1 id="members"> Meet the Members! </h1>
         <section class="all_section center_container">
-            <div>
-                <img id="left_arrow_click" src="img/arrowleft.png" alt="arrow left">
+
+            <!-- left arrow -->
+            <div id="hover_left">
+                <a> <img id="left_arrow_click" src="img/arrowleft.png" alt="arrow left"></a>
             </div>
+
             <div class="individual_section">
-                <div>
-                    <a href="#"><img src="img/logo2.jpeg" alt=""></a>
+
+                <div id="member_foto">
+                    <a><img id="member_foto_retrieve" src="img/logo2.jpeg" alt=""></a>
                 </div>
-                <div>
-                    <h2>member here</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+
+                <div id="member_text">
+                    <div class="member_text_detail">
+                        <h2 id="memberName">member here</h2>
+                        <p id="memberDetail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum
+                            dolor, sit amet consectetur adipisicing elit. Eligendi, veritatis ducimus cupiditate, vero
+                            officia voluptatum omnis porro amet doloribus libero facere odit ipsam harum dicta obcaecati
+                            nihil nostrum deleniti adipisci?</p>
+
+                    </div>
+                    <div class="socials">
+                        <a id="instagram" href="https://www.instagram.com/cardiostasis" target="_blank"><img
+                                src="img/icons/instagram.png" alt="instagram icon"></a>
+                        <a id="twitter" href="https://x.com/cardiostasis" target="_blank"><img src="img/icons/twitter.png"
+                                alt="twitter icon"></a>
+                        <a id="youtube" href="https://www.youtube.com/channel/UCoR_vJNRtFTzingh-LJaFzg" target="_blank"><img
+                                src="img/icons/youtube.png" alt="youtube icon"></a>
+                    </div>
+                    
+
                 </div>
+
             </div>
-            <div>
-                <img id="right_arrow_click" src="img/arrowright.png" alt="arrow left">
+
+            <!-- right arrow -->
+            <div id="hover_right">
+                <a ><img id="right_arrow_click" src="img/arrowright.png" alt="arrow left"></a>
 
             </div>
         </section>
     </main>
 
 
-
-
-
-
-
-
-
-
-
-    <!-- <footer class="center_container2">
+    <footer class="center_container2">
 
         <div class="logo_section">
             <img src="img/logo3transwit.png" alt="cardiostasis logo">
@@ -104,7 +122,8 @@
             </div>
 
         </div>
-    </footer> -->
-    
+    </footer>
+
 </body>
+
 </html>

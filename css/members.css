@@ -23,7 +23,7 @@ h1{
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 P {
@@ -53,8 +53,12 @@ header {
 
 .nav_section {
     padding: 1vh 0;
-
 }
+
+.socials_section a:hover img {
+    opacity: 0.5;
+}
+
 
 .nav_links_section {
     display: flex;
@@ -116,7 +120,7 @@ footer{
 
 .individual_section{
     display: flex;
-    ;
+    padding: 0 12vw;
 }
 
 
@@ -127,4 +131,37 @@ footer{
 .individual_section img{
     width: 20vw;
     /* height: 40vh;        hoogte later aanpassen          */
+}
+
+#hover_left a:hover{
+    opacity: 0.5;
+}
+
+#hover_right a:hover{
+    opacity: 0.5;
+}
+
+#member_foto {
+    text-align: center;
+}
+
+#member_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.socials a img{
+    width: 3vw;
+}
+
+.socials a:hover img{
+    opacity: 0.5;
+}
+
+.member_text_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
 }
