@@ -188,6 +188,45 @@ footer{
 @media (max-width: 600px) {
     .nav_section {
         display: flex;
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center;
+        padding: 2vh 0; /* Add some padding for better spacing */
+    }
+
+    .nav_links_section {
+        flex-direction: column; /* Stack navigation links */
+        gap: 1.5vh; /* Adjust spacing between links */
+        font-size: 1.2rem; /* Increase font size for better readability */
+        text-align: center; /* Center-align links */
+    }
+
+    .nav_links_section a {
+        padding: 0.5vh 0; /* Add padding for touch-friendly links */
+        width: 100%; /* Make links span the full width */
+    }
+
+    .nav_links_section a:hover {
+        color: #FF4500; /* Slightly different hover color for better visibility */
+    }
+
+    .logo_section {
+        margin-bottom: 2vh; /* Add spacing below the logo */
+    }
+
+    .logo_section img {
+        width: 25vw; /* Adjust logo size for smaller screens */
+    }
+
+    .nav_section a:hover img {
+        opacity: 0.7; /* Slightly reduce opacity on hover */
+    }
+
+    header {
+        position: static; /* Remove sticky behavior for mobile */
+    }
+
+    .nav_section {
+        display: flex;
         flex-direction: column;
         align-items: center;
         padding: 2vh 0;
@@ -290,5 +329,9 @@ footer{
 
     .favourites_text {
         padding: 2vh 0; /* Adjust padding for better spacing */
+    }
+
+    header {
+        position: static; /* Remove sticky behavior for mobile */
     }
 }

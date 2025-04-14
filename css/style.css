@@ -327,4 +327,8 @@ footer {
     .nav_section a:hover img {
         opacity: 0.7; /* Slightly reduce opacity on hover */
     }
+
+    header {
+        position: static; /* Remove sticky behavior for mobile */
+    }
 }
