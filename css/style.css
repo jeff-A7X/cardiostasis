@@ -7,12 +7,12 @@
 
 }
 
-a{
+a {
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-h2{
+h2 {
     font-size: 5rem;
 }
 
@@ -55,7 +55,7 @@ header {
     text-decoration: none;
 }
 
-.nav_section a:hover img{
+.nav_section a:hover img {
     opacity: 0.5;
 }
 
@@ -68,7 +68,7 @@ header {
 }
 
 .socials_section img {
-    width: 2vw;
+    width: 3vw; /* Increase size for larger screens */
 }
 
 .main_foto {
@@ -115,7 +115,7 @@ body {
     gap: 5vh;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,12 +126,12 @@ footer{
     flex-direction: column;
 }
 
-.legal_links a{
+.legal_links a {
     font-size: 1rem;
 }
 
-.legal_links a:hover{
-   text-decoration: underline;
+.legal_links a:hover {
+    text-decoration: underline;
 }
 
 .merch_section {
@@ -148,11 +148,11 @@ footer{
     justify-content: space-evenly;
 }
 
-.shirts_section a img{
+.shirts_section a img {
     width: 30vw;
 }
 
-.shirts_section a{
+.shirts_section a {
     transition: transform 0.3s ease;
 }
 
@@ -161,3 +161,170 @@ footer{
     filter: opacity(0.8)
 }
 
+.first_section_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#listen_now a {
+    color: red;
+    position: relative;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#listen_now a::before,
+#listen_now a::after {
+    content: attr(href);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: lime;
+    overflow: hidden;
+    width: 100%;
+    clip: rect(0, 0, 0, 0);
+    z-index: -1;
+}
+
+#listen_now a:hover::before {
+    animation: glitchTop 0.3s infinite linear alternate-reverse;
+}
+
+#listen_now a:hover::after {
+    animation: glitchBottom 0.3s infinite linear alternate-reverse;
+}
+
+@keyframes glitchTop {
+    0% {
+        clip: rect(0, 9999px, 9px, 0);
+        transform: translate(-2px, -2px);
+    }
+
+    100% {
+        clip: rect(0, 9999px, 9px, 0);
+        transform: translate(2px, 2px);
+    }
+}
+
+@keyframes glitchBottom {
+    0% {
+        clip: rect(10px, 9999px, 15px, 0);
+        transform: translate(-1px, 1px);
+    }
+
+    100% {
+        clip: rect(10px, 9999px, 15px, 0);
+        transform: translate(1px, -1px);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9rem; /* Adjust base font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 3rem; /* Reduce heading size */
+    }
+
+    .center_container, .center_container2 {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+    }
+
+    .nav_links_section {
+        flex-direction: column; /* Stack navigation links */
+        gap: 2vh; /* Adjust spacing */
+        font-size: 1rem; /* Increase readability */
+    }
+
+    .logo_section img {
+        width: 20vw; /* Reduce logo size */
+    }
+
+    .socials_section img {
+        width: 8vw; /* Increase size for smaller screens */
+    }
+
+    .main_foto {
+        height: 50vh; /* Reduce height for smaller screens */
+    }
+
+    .main_foto h1 {
+        font-size: clamp(1.5rem, 5vw, 4rem); /* Adjust font size */
+        bottom: 60px; /* Adjust positioning */
+        left: 40px;
+    }
+
+    .album_section {
+        flex-direction: column; /* Stack albums vertically */
+        align-items: center;
+        gap: 5vh; /* Adjust spacing */
+    }
+
+    .album_section img {
+        width: 80vw; /* Adjust album image size */
+    }
+
+    .merch_section {
+        gap: 5vh; /* Adjust spacing */
+    }
+
+    .shirts_section {
+        flex-direction: column; /* Stack shirts vertically */
+        gap: 5vh; /* Adjust spacing */
+    }
+
+    .shirts_section a img {
+        width: 80vw; /* Adjust shirt image size */
+    }
+
+    footer {
+        flex-direction: column; /* Stack footer elements */
+        gap: 2vh; /* Adjust spacing */
+    }
+
+    .legal_links {
+        align-items: center; /* Center legal links */
+    }
+
+    #listen_now a {
+        font-size: 1.5rem; /* Adjust button size */
+    }
+
+    .nav_section {
+        display: flex;
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: center;
+        padding: 2vh 0; /* Add some padding for better spacing */
+    }
+
+    .nav_links_section {
+        flex-direction: column; /* Stack navigation links */
+        gap: 1.5vh; /* Adjust spacing between links */
+        font-size: 1.2rem; /* Increase font size for better readability */
+        text-align: center; /* Center-align links */
+    }
+
+    .nav_links_section a {
+        padding: 0.5vh 0; /* Add padding for touch-friendly links */
+        width: 100%; /* Make links span the full width */
+    }
+
+    .nav_links_section a:hover {
+        color: #FF4500; /* Slightly different hover color for better visibility */
+    }
+
+    .logo_section {
+        margin-bottom: 2vh; /* Add spacing below the logo */
+    }
+
+    .logo_section img {
+        width: 25vw; /* Adjust logo size for smaller screens */
+    }
+
+    .nav_section a:hover img {
+        opacity: 0.7; /* Slightly reduce opacity on hover */
+    }
+}

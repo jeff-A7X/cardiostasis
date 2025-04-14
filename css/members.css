@@ -80,9 +80,8 @@ header {
 }
 
 .socials_section img {
-    width: 2vw;
+    width: 3vw; /* Adjust size for larger screens */
 }
-
 
 footer{
     display: flex;
@@ -180,4 +179,116 @@ footer{
     display: flex;
     justify-content: space-around;
     padding: 2vh 0;
+}
+
+
+/* responsiveness */
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .nav_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh 0;
+    }
+
+    .nav_links_section {
+        flex-direction: column;
+        gap: 1.5vh;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .nav_links_section a {
+        padding: 0.5vh 0;
+        width: 100%;
+    }
+
+    .nav_links_section a:hover {
+        color: #FF4500;
+    }
+
+    .logo_section img {
+        width: 25vw;
+    }
+
+    .socials_section img {
+        width: 8vw;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    body {
+        font-size: 0.9rem; /* Adjust base font size for smaller screens */
+    }
+
+    h1 {
+        font-size: 3rem; /* Reduce heading size */
+    }
+
+    h2 {
+        font-size: 2rem; /* Reduce subheading size */
+    }
+
+    #members {
+        flex-direction: column; /* Stack members section vertically */
+        padding-top: 3vh;
+        text-align: center;
+    }
+
+    .all_section {
+        flex-direction: column; /* Stack all sections vertically */
+        gap: 5vh; /* Add spacing between sections */
+        padding: 5vh 0;
+    }
+
+    .individual_section {
+        flex-direction: column; /* Stack individual sections vertically */
+        padding: 0 5vw; /* Reduce horizontal padding */
+        gap: 3vh; /* Add spacing between items */
+    }
+
+    .individual_section img {
+        width: 80vw; /* Adjust image size for smaller screens */
+    }
+
+    #member_text {
+        gap: 3vh; /* Adjust spacing between text elements */
+    }
+
+    .socials a img {
+        width: 8vw; /* Increase size of social icons for better visibility */
+    }
+
+    .favourites_section {
+        padding-bottom: 10vh; /* Reduce bottom padding */
+    }
+
+    .embed_section {
+        flex-direction: column; /* Stack embedded content vertically */
+        gap: 3vh; /* Add spacing between embeds */
+        padding: 2vh 0;
+    }
+
+    .embed_section {
+        flex-direction: column; /* Stack embedded content vertically */
+        align-items: center; /* Center-align embeds */
+        gap: 3vh; /* Add spacing between embeds */
+        padding: 2vh 0;
+    }
+
+    .embed_section iframe, 
+    .embed_section video, 
+    .embed_section img {
+        width: 90%; /* Make embeds fit within the viewport */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .favourites_text {
+        padding: 2vh 0; /* Adjust padding for better spacing */
+    }
 }
