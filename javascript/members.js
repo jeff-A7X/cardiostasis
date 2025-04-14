@@ -19,7 +19,7 @@ let memberInfo = [  "I’m the lead vocalist, songwriter, and rhythm guitarist f
   " I'm the lead guitarist and backing vocalist in Cardiostasis, I've always had a huge passion for loud raw heavy and melodic music. All my emotion and energy goes into crafting and enjoying music influenced greatly by bands like Bullet for My Valentine, Trivium, Parkway Drive and other heavy hitting emotional metal bands. Whether on stage, in the studio or even at home, I'm all about the balance of creating the most hard hitting, headbanging riffs and vocals along with producing the most touching and emotional music.",
 "ik ben koen lol poep ik hou van radiohoofd en ben retarded"]
 let memberInstagram = ['https://www.instagram.com/alex_kokee/', 'https://www.instagram.com/jeff_stasis/', 'https://www.instagram.com/koen_meloen_010/'];
-let memberTwitter = ['https://x.com/ThemeParkVex', 'https://x.com/raredutch', 'https://x.com/RyanGosling'];
+let memberTwitter = ['https://x.com/ansullen', 'https://x.com/raredutch', 'https://x.com/RyanGosling'];
 let memberYoutube = ['https://www.youtube.com/@alexkokee', 'https://www.youtube.com/@jeffstasis', 'https://www.youtube.com/@koenerkeland'];
 let playlistSources = ['https://open.spotify.com/embed/playlist/1J9Q7Er9HPo3hxpc95DyJU?utm_source=generator', 'https://open.spotify.com/embed/playlist/1wUKJmb0YvyGoeq3aXJM2C?utm_source=generator', 'https://open.spotify.com/embed/playlist/12uEFYFJLpo42HbBrQUGfZ?utm_source=generator'];
 
