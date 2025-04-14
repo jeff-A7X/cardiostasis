@@ -9,11 +9,15 @@
 
 a{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
-h1{
-    font-size: 3rem;
+h2{
+    font-size: 5rem;
+}
+
+P {
+    font-size: 1.5rem;
 }
 
 header {
@@ -38,7 +42,6 @@ header {
 
 .nav_section {
     padding: 1vh 0;
-
 }
 
 .nav_links_section {
@@ -115,7 +118,41 @@ footer{
 }
 
 .legal_links {
-    font-size: 0.5rem;
     display: flex;
     flex-direction: column;
+}
+
+.legal_links a{
+    font-size: 1rem;
+}
+
+.legal_links a:hover{
+   text-decoration: underline;
+}
+
+.merch_section {
+    padding: 15vh 0;
+    gap: 15vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.shirts_section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shirts_section a img{
+    width: 30vw;
+}
+
+.shirts_section a{
+    transition: transform 0.3s ease;
+}
+
+.shirts_section a:hover {
+    transform: scale(1.05);
+    filter: opacity(0.8)
 }
