@@ -13,16 +13,16 @@ body {
 }
 
 
-a{
+a {
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-h1{
+h1 {
     font-size: 4rem;
 }
 
-h2{
+h2 {
     font-size: 3rem;
 }
 
@@ -50,7 +50,6 @@ header {
     margin: 0 auto;
 }
 
-
 .nav_section {
     padding: 1vh 0;
 }
@@ -71,7 +70,7 @@ header {
     text-decoration: none;
 }
 
-.nav_section a:hover img{
+.nav_section a:hover img {
     opacity: 0.5;
 }
 
@@ -80,10 +79,11 @@ header {
 }
 
 .socials_section img {
-    width: 3vw; /* Adjust size for larger screens */
+    width: 3vw;
+    /* Adjust size for larger screens */
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,12 +94,12 @@ footer{
     flex-direction: column;
 }
 
-.legal_links a{
+.legal_links a {
     font-size: 1rem;
 }
 
-.legal_links a:hover{
-   text-decoration: underline;
+.legal_links a:hover {
+    text-decoration: underline;
 }
 
 /* copy paste above for nav and footer*/
@@ -118,26 +118,26 @@ footer{
     padding-bottom: 5vh;
 }
 
-.individual_section{
+.individual_section {
     display: flex;
     padding: 0 12vw;
 }
 
 
-.individual_section div{
+.individual_section div {
     flex: 1;
 }
 
-.individual_section img{
+.individual_section img {
     width: 20vw;
     /* height: 40vh;        hoogte later aanpassen          */
 }
 
-#hover_left a:hover{
+#hover_left a:hover {
     opacity: 0.5;
 }
 
-#hover_right a:hover{
+#hover_right a:hover {
     opacity: 0.5;
 }
 
@@ -145,18 +145,18 @@ footer{
     text-align: center;
 }
 
-#member_text{
+#member_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 5vh;
 }
 
-.socials a img{
+.socials a img {
     width: 3vw;
 }
 
-.socials a:hover img{
+.socials a:hover img {
     opacity: 0.5;
 }
 
@@ -171,7 +171,7 @@ footer{
     padding-bottom: 25vh;
 }
 
-.favourites_text{
+.favourites_text {
     padding: 4vh 0;
 }
 
@@ -188,41 +188,54 @@ footer{
 @media (max-width: 600px) {
     .nav_section {
         display: flex;
-        flex-direction: column; /* Stack navbar items vertically */
+        flex-direction: column;
+        /* Stack navbar items vertically */
         align-items: center;
-        padding: 2vh 0; /* Add some padding for better spacing */
+        padding: 2vh 0;
+        /* Add some padding for better spacing */
     }
 
     .nav_links_section {
-        flex-direction: column; /* Stack navigation links */
-        gap: 1.5vh; /* Adjust spacing between links */
-        font-size: 1.2rem; /* Increase font size for better readability */
-        text-align: center; /* Center-align links */
+        flex-direction: column;
+        /* Stack navigation links */
+        gap: 1.5vh;
+        /* Adjust spacing between links */
+        font-size: 1.2rem;
+        /* Increase font size for better readability */
+        text-align: center;
+        /* Center-align links */
     }
 
     .nav_links_section a {
-        padding: 0.5vh 0; /* Add padding for touch-friendly links */
-        width: 100%; /* Make links span the full width */
+        padding: 0.5vh 0;
+        /* Add padding for touch-friendly links */
+        width: 100%;
+        /* Make links span the full width */
     }
 
     .nav_links_section a:hover {
-        color: #FF4500; /* Slightly different hover color for better visibility */
+        color: #FF4500;
+        /* Slightly different hover color for better visibility */
     }
 
     .logo_section {
-        margin-bottom: 2vh; /* Add spacing below the logo */
+        margin-bottom: 2vh;
+        /* Add spacing below the logo */
     }
 
     .logo_section img {
-        width: 25vw; /* Adjust logo size for smaller screens */
+        width: 25vw;
+        /* Adjust logo size for smaller screens */
     }
 
     .nav_section a:hover img {
-        opacity: 0.7; /* Slightly reduce opacity on hover */
+        opacity: 0.7;
+        /* Slightly reduce opacity on hover */
     }
 
     header {
-        position: static; /* Remove sticky behavior for mobile */
+        position: static;
+        /* Remove sticky behavior for mobile */
     }
 
     .nav_section {
@@ -262,75 +275,96 @@ footer{
     }
 
     body {
-        font-size: 0.9rem; /* Adjust base font size for smaller screens */
+        font-size: 0.9rem;
+        /* Adjust base font size for smaller screens */
     }
 
     h1 {
-        font-size: 3rem; /* Reduce heading size */
+        font-size: 3rem;
+        /* Reduce heading size */
     }
 
     h2 {
-        font-size: 2rem; /* Reduce subheading size */
+        font-size: 2rem;
+        /* Reduce subheading size */
     }
 
     #members {
-        flex-direction: column; /* Stack members section vertically */
+        flex-direction: column;
+        /* Stack members section vertically */
         padding-top: 3vh;
         text-align: center;
     }
 
     .all_section {
-        flex-direction: column; /* Stack all sections vertically */
+        flex-direction: column;
+        /* Stack all sections vertically */
         padding: 5vh 0;
     }
 
     .individual_section {
-        flex-direction: column; /* Stack individual sections vertically */
-        padding: 0 5vw; /* Reduce horizontal padding */
-        gap: 3vh; /* Add spacing between items */
+        flex-direction: column;
+        /* Stack individual sections vertically */
+        padding: 0 5vw;
+        /* Reduce horizontal padding */
+        gap: 3vh;
+        /* Add spacing between items */
     }
 
     .individual_section img {
-        width: 80vw; /* Adjust image size for smaller screens */
+        width: 80vw;
+        /* Adjust image size for smaller screens */
     }
 
     #member_text {
-        gap: 3vh; /* Adjust spacing between text elements */
+        gap: 3vh;
+        /* Adjust spacing between text elements */
     }
 
     .socials a img {
-        width: 8vw; /* Increase size of social icons for better visibility */
+        width: 8vw;
+        /* Increase size of social icons for better visibility */
     }
 
     .favourites_section {
-        padding-bottom: 10vh; /* Reduce bottom padding */
+        padding-bottom: 10vh;
+        /* Reduce bottom padding */
     }
 
     .embed_section {
-        flex-direction: column; /* Stack embedded content vertically */
-        gap: 3vh; /* Add spacing between embeds */
+        flex-direction: column;
+        /* Stack embedded content vertically */
+        gap: 3vh;
+        /* Add spacing between embeds */
         padding: 2vh 0;
     }
 
     .embed_section {
-        flex-direction: column; /* Stack embedded content vertically */
-        align-items: center; /* Center-align embeds */
-        gap: 3vh; /* Add spacing between embeds */
+        flex-direction: column;
+        /* Stack embedded content vertically */
+        align-items: center;
+        /* Center-align embeds */
+        gap: 3vh;
+        /* Add spacing between embeds */
         padding: 2vh 0;
     }
 
-    .embed_section iframe, 
-    .embed_section video, 
+    .embed_section iframe,
+    .embed_section video,
     .embed_section img {
-        width: 90%; /* Make embeds fit within the viewport */
-        height: auto; /* Maintain aspect ratio */
+        width: 90%;
+        /* Make embeds fit within the viewport */
+        height: auto;
+        /* Maintain aspect ratio */
     }
 
     .favourites_text {
-        padding: 2vh 0; /* Adjust padding for better spacing */
+        padding: 2vh 0;
+        /* Adjust padding for better spacing */
     }
 
     header {
-        position: static; /* Remove sticky behavior for mobile */
+        position: static;
+        /* Remove sticky behavior for mobile */
     }
 }

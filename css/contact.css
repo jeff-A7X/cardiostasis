@@ -1,0 +1,45 @@
+/* General styles for the main section */
+.center_container3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15vh 0;
+}
+
+.center_container4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2vh 0;
+    padding-bottom: 30vh;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .center_container3 {
+        padding: 12vh 0; /* Reduce padding for smaller screens */
+    }
+
+    .center_container3 h1 {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    .center_container3 p {
+        font-size: 1.2rem; /* Adjust paragraph size */
+    }
+
+    .center_container4 {
+        font-size: 1.2rem; /* Adjust email text size */
+        padding: 10vh 0; /* Reduce padding */
+        padding-bottom: 20vh;
+    }
+}

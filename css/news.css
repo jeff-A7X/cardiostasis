@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.center_container {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center_container2 {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.center_container3 {
+    display: flex;
+    justify-content: center;
+    padding: 10vh 0;
+}
+
+
+/* Navbar and footer styles */
+.nav_section {
+    padding: 1vh 0;
+}
+
+.nav_links_section {
+    display: flex;
+    gap: 3vw;
+    font-size: 0.8rem;
+}
+
+.nav_links_section a:hover {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.nav_section a:hover img {
+    opacity: 0.5;
+}
+
+.logo_section img {
+    width: 10vw;
+}
+
+.socials_section img {
+    width: 3vw;
+    /* Adjust size for larger screens */
+}
+
+.socials_section a:hover img {
+    opacity: 0.5;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.legal_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.legal_links a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.legal_links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .nav_section {
+        display: flex;
+        flex-direction: column;
+        /* Stack navbar items vertically */
+        align-items: center;
+        padding: 2vh 0;
+        /* Add some padding for better spacing */
+    }
+
+    .nav_links_section {
+        flex-direction: column;
+        /* Stack navigation links */
+        gap: 1.5vh;
+        /* Adjust spacing between links */
+        font-size: 1.2rem;
+        /* Increase font size for better readability */
+        text-align: center;
+        /* Center-align links */
+    }
+
+    .nav_links_section a {
+        padding: 0.5vh 0;
+        /* Add padding for touch-friendly links */
+        width: 100%;
+        /* Make links span the full width */
+    }
+
+    .nav_links_section a:hover {
+        color: #FF4500;
+        /* Slightly different hover color for better visibility */
+    }
+
+    .logo_section img {
+        width: 25vw;
+        /* Adjust logo size for smaller screens */
+    }
+
+    .socials_section img {
+        width: 8vw;
+        /* Adjust size for smaller screens */
+    }
+
+    footer {
+        flex-direction: column;
+        /* Stack footer elements */
+        gap: 2vh;
+        /* Adjust spacing */
+    }
+}

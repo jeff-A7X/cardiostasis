@@ -162,6 +162,7 @@ footer {
     filter: opacity(0.8)
 }
 
+
 .first_section_main {
     display: flex;
     flex-direction: column;
@@ -375,7 +376,7 @@ footer {
     }
 
     #listen_now a {
-        color: red /* Reset color */
+        color: red; /* Reset color */
         position: static; /* Remove relative positioning */
         text-decoration: none; /* Ensure no text decoration */
         font-size: 2rem

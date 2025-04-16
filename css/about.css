@@ -1,0 +1,103 @@
+h1{
+    font-size: 4rem;
+    padding: 2vh 0;
+}
+
+.first_section {
+    max-width: 80vw;
+    margin: auto;
+    padding: 10vh 0;
+    display: flex;
+}
+
+#jonathan {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+#jonathan img {
+    height: 70vh;
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't overflow */
+}
+
+#text_first {
+    flex: 2;
+}
+
+
+.second_section {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 3vh 0;
+    padding-bottom: 20vh;
+}
+
+p{
+    padding: 2vh 0;
+}
+
+#italic {
+    font-style: italic;
+}
+
+/* General styles for the main section */
+main {
+    padding: 5vh 0;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 4rem;
+    margin-bottom: 2vh;
+}
+
+main p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 2vh 0;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    main {
+        padding: 3vh 0; /* Reduce padding for smaller screens */
+    }
+
+    main h1 {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    main p {
+        font-size: 1.2rem; /* Adjust paragraph size */
+        line-height: 1.4; /* Adjust line height for better readability */
+        margin: 1.5vh 0; /* Reduce margin */
+    }
+
+    .first_section {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center-align the content */
+        gap: 2vh; /* Add spacing between text and image */
+    }
+
+    #jonathan {
+        display: flex;
+        justify-content: center; /* Center the image horizontally */
+        align-items: center; /* Center the image vertically */
+        margin: 2vh 0; /* Add spacing around the image */
+    }
+
+    #jonathan img {
+        height: auto; /* Allow the height to adjust automatically */
+        max-width: 90%; /* Scale the image to fit within the viewport */
+        margin: 0 auto; /* Center the image */
+        display: block; /* Ensure proper centering */
+    }
+
+    #text_first {
+        text-align: center; /* Center-align the text */
+    }
+}
