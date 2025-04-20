@@ -21,7 +21,7 @@ let memberInfo = [  "I’m the lead vocalist, songwriter, and rhythm guitarist f
 let memberInstagram = ['https://www.instagram.com/alex_kokee/', 'https://www.instagram.com/jeff_stasis/', 'https://www.instagram.com/koen_meloen_010/'];
 let memberTwitter = ['https://x.com/ansullen', 'https://x.com/raredutch', 'https://x.com/RyanGosling'];
 let memberYoutube = ['https://www.youtube.com/@alexkokee', 'https://www.youtube.com/@jeffstasis', 'https://www.youtube.com/@koenerkeland'];
-let playlistSources = ['https://open.spotify.com/embed/playlist/1J9Q7Er9HPo3hxpc95DyJU?utm_source=generator', 'https://open.spotify.com/embed/playlist/76VldsmPgYEkXR550fdLkR?utm_source=generator', 'https://open.spotify.com/embed/playlist/12uEFYFJLpo42HbBrQUGfZ?utm_source=generator'];
+let playlistSources = ['https://open.spotify.com/embed/playlist/1J9Q7Er9HPo3hxpc95DyJU?utm_source=generator', 'https://open.spotify.com/embed/playlist/76VldsmPgYEkXR550fdLkR?utm_source=generator', 'https://open.spotify.com/embed/playlist/6vo4QN6wAdwcUWJbfF9Mkl?utm_source=generator'];
 
 
 
