@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tourDates.css">
+    <title>Cardiostasis</title>
+</head>
+
+<body>
+    <header>
+        <nav class="center_container nav_section">
+            <div class="logo_section">
+                <a href="index.html"><img src="img/logo3transwit.png" alt="cardiostasis logo"></a>
+            </div>
+
+            <div class="nav_links_section">
+                <a href="https://cardiostasis.myspreadshop.nl/" target="_blank">Merch</a>
+                <a href="video.html">Music & Videos</a>
+                <a href="tourDates.html">Tour</a>
+                <a href="members.html">Members</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="socials_section">
+                <a href="https://www.facebook.com/profile.php?id=61574958222452&locale=nl_NL" target="_blank"><img
+                        src="img/icons/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/cardiostasis" target="_blank"><img src="img/icons/instagram.png"
+                        alt="instagram icon"></a>
+                <a href="https://x.com/cardiostasis" target="_blank"><img src="img/icons/twitter.png"
+                        alt="twitter icon"></a>
+                <a href="https://www.youtube.com/@cardiostasis" target="_blank"><img src="img/icons/youtube.png"
+                        alt="youtube icon"></a>
+                <a href="https://open.spotify.com/artist/7cf3ASf3knuWw8DKaQe50c" target="_blank"><img
+                        src="img/icons/spotify.png" alt="spotify icon"></a>
+                <a href="https://music.apple.com/us/artist/cardiostasis/1735668145" target="_blank"><img
+                        src="img/icons/itunes.png" alt="itunes icon"></a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+
+        <div class="tour_section">
+            <div class="tour_title">
+                <h1>Tour Dates</h1>
+            </div>
+            <div id="output">
+            </div>
+        </div>
+
+        <div>
+            <script src="https://apis.google.com/js/api.js"></script>
+
+            <script>
+                const API_KEY = 'AIzaSyBF5QO_wMQqa20RoRVjQvi-J_awuZEu9qs';
+                const SPREADSHEET_ID = '1qYgenA6rfAVZW1SWbaYyFripBaCBe9dcMqKwKo42ERE';
+                const RANGE = 'Sheet1!A1:E20'; // adjust as needed
+
+                function start() {
+                    gapi.client.init({
+                        'apiKey': API_KEY,
+                    }).then(() => {
+                        return gapi.client.request({
+                            'path': `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}`,
+                        });
+                    }).then(response => {
+                        const result = response.result.values;
+                        if (!result || result.length === 0) {
+                            document.getElementById('output').innerHTML = 'No data found.';
+                            return;
+                        }
+
+                       let html = '<table class="tour-table">';
+                        result.forEach((row, i) => {
+                            html += '<tr>';
+                            row.forEach(cell => {
+                                html += `<${i === 0 ? 'th' : 'td'}>${cell}</${i === 0 ? 'th' : 'td'}>`;
+                            });
+                            html += '</tr>';
+                        });
+                        html += '</table>';
+                        document.getElementById('output').innerHTML = html;
+                    }, error => {
+                        console.error(error);
+                        document.getElementById('output').textContent = 'Error loading sheet';
+                    });
+                }
+
+                gapi.load('client', start);
+            </script>
+        </div>
+
+    </main>
+    <footer class="center_container2">
+
+        <div class="logo_section">
+            <img src="img/logo3transwit.png" alt="cardiostasis logo">
+        </div>
+        <div class="socials_section">
+            <a href="https://www.facebook.com/profile.php?id=61574958222452&locale=nl_NL" target="_blank"><img
+                    src="img/icons/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/cardiostasis" target="_blank"><img src="img/icons/instagram.png"
+                    alt="instagram icon"></a>
+            <a href="https://x.com/cardiostasis" target="_blank"><img src="img/icons/twitter.png"
+                    alt="twitter icon"></a>
+            <a href="https://www.youtube.com/@cardiostasis" target="_blank"><img src="img/icons/youtube.png"
+                    alt="youtube icon"></a>
+            <a href="https://open.spotify.com/artist/7cf3ASf3knuWw8DKaQe50c" target="_blank"><img
+                    src="img/icons/spotify.png" alt="spotify icon"></a>
+            <a href="https://music.apple.com/us/artist/cardiostasis/1735668145" target="_blank"><img
+                    src="img/icons/itunes.png" alt="itunes icon"></a>
+        </div>
+        <div>
+
+            <div class="legal_links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">© 2025 Cardiostasis. <br> All rights reserved.</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

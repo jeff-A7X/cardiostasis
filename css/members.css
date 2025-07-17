@@ -121,6 +121,7 @@ footer {
 .individual_section {
     display: flex;
     padding: 0 12vw;
+    padding-bottom: 10vh;
 }
 
 
@@ -144,6 +145,8 @@ footer {
 #member_foto {
     text-align: center;
 }
+
+
 
 #member_text {
     display: flex;
