@@ -1,0 +1,6 @@
+.env
+secret-config.js
+node_modules/
+dist/
+/.netlify
+.DS_Store
