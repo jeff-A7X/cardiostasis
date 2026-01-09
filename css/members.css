@@ -169,6 +169,10 @@ footer {
     gap: 3vh;
 }
 
+#memberDetail {
+    line-height: 1.2;
+}
+
 .favourites_section {
     text-align: center;
     padding-bottom: 25vh;
